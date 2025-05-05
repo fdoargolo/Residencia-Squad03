@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Adquirente</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <h1 class="logo">Duby</h1>
+    <button class="home-button">Home</button>
+    <nav class="menu">
+      <p>Relatório Financeiro</p>
+      <p>Transações</p>
+      <p>Gestão de taxas</p>
+      <div class="submenu">
+        <button class="active">Cadastros</button>
+        <ul>
+          <li>Cadastro de Informações Financeiras</li>
+          <li>Cadastro de Banco</li>
+          <li class="selected">Cadastro de Adquirente</li>
+          <li>Cadastro de Taxas</li>
+        </ul>
+      </div>
+    </nav>
+    <a href="#" class="voltar">← Voltar</a>
+  </div>
+
+  <main>
+    <header>
+      <h2>Cadastro de Adquirente</h2>
+      <div class="header-right">
+        <span>Calendário icone</span>
+        <span>chat icone</span>
+        <span>perfil icone</span>
+      </div>
+    </header>
+
+    <section class="form-card">
+      <h3>Cadastro de Adquirente</h3>
+      <form>
+        <label>Identificação</label>
+        <input type="text" placeholder="">
+
+        <label>Banco Vinculado</label>
+        <input type="text" placeholder="">
+
+        <label>Tipo de Adquirente</label>
+        <select>
+          <option>Crédito</option>
+          <option>Débito</option>
+        </select>
+
+        <label>Status</label>
+        <select>
+          <option>Ativo</option>
+          <option>Inativo</option>
+        </select>
+
+        <div class="buttons">
+          <button type="submit" class="salvar">SALVAR</button>
+          <button type="reset" class="limpar">LIMPAR</button>
+          <button type="button" class="cancelar">CANCELAR</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
