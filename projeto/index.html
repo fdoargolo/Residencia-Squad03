@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatório Financeiro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <img src="logo-duby-conceito.webp" alt="Logo Duby" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Relatório Anual</a></li>
+        <li><a href="#">Transações</a></li>
+        <li><a href="#">Gestão de Taxas</a></li>
+        <li><a href="#">Cadastros</a></li>
+        <li><a href="#">Voltar</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <h1>Métricas-Chave</h1>
+
+    <section class="metricas">
+      <div><strong>Faturamento</strong><p>R$ 123.365,00</p></div>
+      <div><strong>Valor Gasto</strong><p>R$ 20.355,00</p></div>
+      <div><strong>Impostos</strong><p>5%</p></div>
+      <div><strong>Lucro</strong><p>R$ 103.010,00</p></div>
+      <div><strong>Margem Lucro</strong><p>83.5%</p></div>
+      <div><strong>Qtd. Transações</strong><p>122</p></div>
+    </section>
+
+    <section class="todas-metricas">
+      <h2>Todas as Métricas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Métrica</th>
+            <th>Ano do Relatório</th>
+            <th>Ano Anterior</th>
+            <th>% de Alteração</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-transacoes">
+          <tr>
+            <td>Receitas</td>
+            <td class="valor-atual">123000</td>
+            <td class="valor-anterior">100000</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Despesas Operacionais</td>
+            <td class="valor-atual">30000</td>
+            <td class="valor-anterior">25000</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Lucro Operacional</td>
+            <td class="valor-atual">93000</td>
+            <td class="valor-anterior">75000</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Depreciação</td>
+            <td class="valor-atual">4000</td>
+            <td class="valor-anterior">5000</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Juros</td>
+            <td class="valor-atual">2000</td>
+            <td class="valor-anterior">1500</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Lucro Líquido</td>
+            <td class="valor-atual">87000</td>
+            <td class="valor-anterior">68500</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Impostos</td>
+            <td class="valor-atual">6000</td>
+            <td class="valor-anterior">5500</td>
+            <td class="percentual"></td>
+          </tr>
+          <tr>
+            <td>Lucro Após Impostos</td>
+            <td class="valor-atual">81000</td>
+            <td class="valor-anterior">63000</td>
+            <td class="percentual"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
