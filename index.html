@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duby Dashboard</title>
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+  <div class="sidebar">
+    <h2>Duby</h2>
+    <button>Home</button>
+    <button>Relatório Financeiro</button>
+    <button>Transações</button>
+    <button>Gestão de taxas</button>
+    <button>Cadastros</button>
+    <button>Voltar</button>
+  </div>
+
+  <header class="top-bar">
+    <div class="left">
+    </div>
+    <div class="right">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="top-bar-H">
+      <h1>Home</h1>
+    </div>
+
+    <div class="section">
+      <div class="card">
+        <h3>Últimos 7D</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Funil de Conversão</h3>
+        <canvas id="funnelChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Média Mensal</h3>
+        <div class="monthly-summary">
+          <div class="summary-item">
+            <h4>Faturamento</h4>
+            <p>R$ 123.365,00</p>
+          </div>
+          <div class="summary-item">
+            <h4>Valor Gasto</h4>
+            <p>R$ 20.355,00</p>
+          </div>
+          <div class="summary-item">
+            <h4>Qtd. Transações</h4>
+            <p>122</p>
+          </div>
+          <div class="summary-item">
+            <h4>Impostos</h4>
+            <p>5%</p>
+          </div>
+          <div class="summary-item">
+            <h4>Lucro</h4>
+            <p>R$ 103.010,00</p>
+          </div>
+          <div class="summary-item">
+            <h4>Margem Lucro</h4>
+            <p>83.5%</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h3>Transações</h3>
+        <table class="transactions-table">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>Código</th>
+              <th>Valor</th>
+              <th>Imposto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pedro</td>
+              <td>Guilherme</td>
+              <td>ACX23X126753</td>
+              <td>R$ 300</td>
+              <td>R$ 15</td>
+            </tr>
+            <tr>
+              <td>Felipe</td>
+              <td>José</td>
+              <td>AC2ZY217653</td>
+              <td>R$ 200</td>
+              <td>R$ 10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
