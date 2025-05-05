@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Taxas - Duby</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<aside class="sidebar">
+  <img src="assets/logoempresa.svg" alt="Logo da Empresa" class="logo">
+  <nav class="menu">
+    <a href="#"><span><img src="assets/home.png" class="icones"></span> Home</a>
+    <a href="#"><span>📊</span> Relatório Financeiro</a>
+    <a href="#"><span>💳</span> Transações</a>
+    <a href="#" class="active"><span>⚙️</span> Gestão de Taxas</a>
+    <a href="#"><span>📝</span> Cadastros</a>
+    <a href="#"><span><img src="assets/voltar.png" class="icones"></span>Voltar</a>
+  </nav>
+</aside>
+
+<main class="content">
+  <header class="top-header">
+    <input type="text" placeholder="Pesquisar...">
+    <div class="top-icons">
+    <span><img src="assets/calendario.png" class="icones" alt="Calendário"></span>
+    <span><img src="assets/chat.png" class="icones" alt="Chat"></span>
+    <span><img src="assets/perfil.png" class="icones" alt="Perfil"></span>
+    </div>
+  </header>
+
+  <h1 class="page-title">Gestão de Taxas</h1>
+
+  <section class="cards">
+    <div class="card">
+      <h2>Total de Vendas no Cartão</h2>
+      <p>R$ 25.000</p>
+    </div>
+    <div class="card">
+      <h2>Total de Taxas Pagas</h2>
+      <p>R$ 250</p>
+    </div>
+    <div class="card">
+      <h2>Taxa Média por Operadora</h2>
+      <p>3,2%</p>
+    </div>
+  </section>
+
+  <section class="charts-section">
+    <div class="chart-card">
+      <h2>Valor Líquido Recebido</h2>
+      <canvas id="pieChart"></canvas>
+    </div>
+
+    <div class="table-card">
+      <h2>Vendas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Valor Bruto</th>
+            <th>Forma</th>
+            <th>Bandeira</th>
+            <th>Operadora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>03/04/2024</td><td>R$ 100</td><td>Débito</td><td>Visa</td><td>Cielo</td></tr>
+          <tr><td>21/03/2024</td><td>R$ 200</td><td>Ticket</td><td>Ticket</td><td>Edenred</td></tr>
+          <tr><td>19/03/2024</td><td>R$ 600</td><td>Débito</td><td>Elo</td><td>Cielo</td></tr>
+          <tr><td>03/03/2024</td><td>R$ 200</td><td>Crédito</td><td>Visa</td><td>Cielo</td></tr>
+          <tr><td>27/02/2024</td><td>R$ 500</td><td>Crédito</td><td>Elo</td><td>Elo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bar-chart-card">
+      <h2>Taxa por Operadora</h2>
+      <p>Nubank 3,1%</p>
+      <div class="bar" style="width: 31%;"></div>
+      <p>Banese 3,6%</p>
+      <div class="bar" style="width: 36%;"></div>
+      <p>Picpay 2,7%</p>
+      <div class="bar" style="width: 27%;"></div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

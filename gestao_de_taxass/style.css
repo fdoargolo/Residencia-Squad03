@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #2d1248;
+    color: white;
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #4a1a73;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 230px;
+    margin-bottom: 30px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .menu a {
+    background: #7dc67d;
+    color: #1c1c1c;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .menu a.active {
+    background: #a4e5a4;
+  }
+  
+  .icones {
+    width:32px;
+    height:32px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+  }
+
+  .content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-header input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .page-title {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: #404040;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .card h2 {
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .charts-section {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  
+  .chart-card, .table-card, .bar-chart-card {
+    background: #404040;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+  }
+  
+  .bar {
+    background-color: #7dc67d;
+    height: 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+  }
+  
+  .top-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
