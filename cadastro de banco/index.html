@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastro de Banco</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="icons/logo.png" class="logo" alt="Logo Duby" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="nav-item">
+              <img src="icons/home.png" alt="Home" class="icon" />Home
+            </a>
+          </li>
+          <li><a href="#">Relatório Financeiro</a></li>
+          <li><a href="#">Transações</a></li>
+          <li><a href="#">Gestão de taxas</a></li>
+          <li class="dropdown">
+            <a href="#" class="active" id="cadastroToggle">Cadastros</a>
+            <ul class="submenu" id="submenu">
+              <li><a href="#">Cadastro de Banco</a></li>
+              <li><a href="#">Cadastro de Adquirente</a></li>
+              <li><a href="#">Cadastro de Taxas</a></li>
+              <li><a href="#">Cadastro de Informações Financeiras</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="voltar">
+        <button onclick="history.back()">
+          <img src="icons/voltar.webp" alt="Voltar" /> Voltar
+        </button>
+      </div>
+      </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <div class="header-left">
+          <div class="search">
+            <img src="icons/lupa.svg" alt="Lupa" />
+            <input type="text" placeholder="Pesquisar">
+          </div>
+        </div>
+        <div class="header-icons">
+          <img src="icons/calendar.png" alt="Calendário" />
+          <img src="icons/chat.png" alt="Chat" />
+          <img src="icons/user.png" alt="Perfil" />
+        </div>
+      </header>
+
+      <h1>Cadastro de Banco</h1>
+
+      <div class="form-container">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="bank-name">Nome do Banco</label>
+            <input type="text" id="bank-name" name="bank-name" required>
+          </div>
+          <div class="form-group">
+            <label for="account-number">Número da Conta</label>
+            <input type="number" id="account-number" name="account-number" required>
+          </div>
+          <div class="form-group">
+            <label for="agency">Agência</label>
+            <input type="number" id="agency" name="agency" required>
+          </div>         
+          <div class="form-group">
+            <label for="account-type">Tipo de Conta</label>
+            <select id="account-type" name="account-type">
+              <option value="CNPJ">CNPJ</option>
+              <option value="CPF">CPF</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status" name="status">
+              <option value="ativo">Ativo</option>
+              <option value="inativo">Inativo</option>
+            </select>
+          </div>
+          <div class="form-buttons">
+            <button type="submit" class="btn-save">Salvar</button>
+            <button type="reset" class="btn-clear">Limpar</button>
+            <button type="button" class="btn-cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
