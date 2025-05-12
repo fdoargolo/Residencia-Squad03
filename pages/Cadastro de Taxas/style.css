@@ -1,0 +1,276 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1b0e37;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    background: #25134a;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .btn-home {
+    background: #5ed158;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .menu p,
+  .menu summary {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .calendario {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .chat {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .perfil {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .voltar_img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .home {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .cadastro {
+    background: #5ed158;
+    color: black;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .menu ul li {
+    list-style: none;
+    padding-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  .active {
+    background: #5ed158;
+    color: white;
+    padding: 5px;
+    width: 90%;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .voltar {
+    display: block;
+    margin-top: auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+  
+  .main-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .titulo-principal {
+    background: #C799FF;
+    padding: 10px;
+    width: 15%;
+    border: none;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 90px;
+    text-align: center;
+  }
+  
+  .titulo-formulario {
+    font-size: 25px;
+    color: #595561;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }  
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #25134a;
+  }
+  
+  .home-header {
+    background: #5ed158;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .search-bar {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    font-size: 15px;
+  }
+  
+  .header-icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-icons span {
+    margin-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .middle-box {
+    background-color: #3D1F62;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-content {
+    background-color: #1b0e37;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 20px;
+    background-color: #C799FF;
+    color: #1e0e3c;
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    background: #ece8f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  
+  input,
+  select {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .salvar {
+    background: #36c26b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .limpar {
+    background: #f6c33a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .cancelar {
+    background: #e94d4d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
