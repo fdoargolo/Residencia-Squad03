@@ -6,25 +6,17 @@ body {
     color: white;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .sidebar {
-    background: #25134a;
-    width: 250px;
-    padding: 20px;
-    box-sizing: border-box;
+}
+
+.content-wrapper {
+    margin-left: 220px;
+    width: calc(100% - 220px);
     display: flex;
     flex-direction: column;
-  }
+    height: 100vh;
+}
 
-  .sidebar header img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  
-  .btn-home {
+.btn-home {
     background: #5ed158;
     color: white;
     padding: 10px;
@@ -34,92 +26,117 @@ body {
     margin-bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
-  }
-  
-  .menu p,
-  .menu summary {
+}
+
+.menu p,
+.menu summary {
     margin: 10px 0;
     cursor: pointer;
     font-size: 20px;
-  }
+}
 
-  .calendario {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .chat {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .perfil {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .voltar_img {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  .home {
+.home {
     height: 30px;
     width: 30px;
     cursor: pointer;
     align-items: center;
     margin-top: 5px;
-  }
+}
 
-  .cadastro {
-    background: #5ed158;
-    color: black;
-    padding: 10px;
-    width: 70%;
-    border: none;
-    margin-bottom: 20px;
-    border-radius: 50px;
+.calendario {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
-  }
-  
-  .menu ul li {
-    list-style: none;
-    padding-left: 5px;
-    font-size: 15px;
+}
+
+.chat {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
-    margin: 5px 0;
-  }
-  
-  .active {
-    background: #5ed158;
-    color: white;
-    padding: 5px;
-    width: 90%;
-    border: none;
-    margin-bottom: 20px;
-    border-radius: 50px;
+}
+
+.perfil {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
-  }
-  
-  .voltar {
+}
+
+.sidebar {
+    width: 220px;
+    background: #4a1a73;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.sidebar header img {
+    max-width: 100%;
+    height: auto;
     display: block;
-    margin-top: auto;
-    color: white;
+    margin: 0 auto 20px;
+}
+
+.logo {
+    width: 230px;
+    margin-bottom: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.menu a {
+    background: #7dc67d;
+    color: #1c1c1c;
     text-decoration: none;
-    text-align: center;
-    
-  }
-  
-  .main-area {
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.menu a.voltar-btn {
+    margin-top: auto;
+    margin-bottom: 35px;
+}
+
+.menu a:hover {
+    background: #8ee18e;
+}
+
+.menu a.active {
+    background: #a4e5a4;
+}
+
+.icones {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.main-area {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-  }
+    height: 100%;
+    width: 100%;
+}
 
   .titulo-principal {
     background: #C799FF;
@@ -130,26 +147,28 @@ body {
     color: black;
     margin-bottom: 20px;
     margin-top: 0px;
-    margin-left: 90px;
+    margin-left: 110px;
     text-align: center;
   }
-  
-  .titulo-formulario {
+
+.titulo-formulario {
     font-size: 25px;
     color: #595561;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-  }  
-  
-  .header {
+}
+
+.header {
     display: flex;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 30px 10px 50px;
     background-color: #25134a;
-  }
-  
-  .home-header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-header {
     background: #5ed158;
     border: none;
     border-radius: 50%;
@@ -158,29 +177,32 @@ body {
     margin-right: 20px;
     cursor: pointer;
     font-size: 20px;
-  }
-  
-  .search-bar {
+    position: relative;
+    left: 10px;
+}
+
+.search-bar {
     padding: 8px 12px;
     border-radius: 20px;
     border: none;
     width: 250px;
     font-size: 15px;
-  }
-  
-  .header-icons {
+    margin-right: 40px;
+}
+
+.header-icons {
     margin-left: auto;
     display: flex;
     align-items: center;
-  }
-  
-  .header-icons span {
+}
+
+.header-icons span {
     margin-left: 20px;
     font-size: 15px;
     cursor: pointer;
-  }
+}
 
-  .middle-box {
+.middle-box {
     background-color: #3D1F62;
     padding: 40px;
     border-radius: 20px;
@@ -189,28 +211,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .main-content {
+}
+
+.main-content {
     background-color: #1b0e37;
     flex-grow: 1;
     overflow-y: auto;
-    padding: 5px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  h1 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
     font-size: 20px;
     background-color: #C799FF;
     color: #1e0e3c;
     padding: 5px 15px;
     border-radius: 8px;
     margin-bottom: 20px;
-  }
-  
-  .form-container {
+}
+
+.form-container {
     background: #ece8f4;
     padding: 30px;
     border-radius: 10px;
@@ -218,58 +242,57 @@ body {
     max-width: 400px;
     box-sizing: border-box;
     color: #333;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  label {
+}
+
+label {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
     font-size: 15px;
-  }
-  
-  input,
-  select {
+}
+
+input,
+select {
     margin-top: 5px;
     padding: 8px;
     border-radius: 6px;
     border: 1px solid #ccc;
-  }
-  
-  .buttons {
+}
+
+.buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-  }
-  
-  .salvar {
+}
+
+.salvar {
     background: #36c26b;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
-  }
-  
-  .limpar {
+}
+
+.limpar {
     background: #f6c33a;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
-  }
-  
-  .cancelar {
+}
+
+.cancelar {
     background: #e94d4d;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
-  }
-  
+}
