@@ -1,147 +1,127 @@
-body{
-    height: 100vh;
-    background-color: #1D0638;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/*borda lateralr*/
-nav.menu-lateral{
-    width: 300px;
-    height: 100%;
-    background-color:#4A1D81;
-    padding: 40px 0 40px 1%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-/*resto das imagens*/
-.imagem-container{
-    transform: scale(0.75);
-    width: 30px;
-    padding-left: 1px;
-    padding-right: 2px;
-    padding-top: 5px;
+/* -------- GERAL -------- */
+body {
+  height: 100vh;
+  background-color: #1D0638;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
 }
 
-ul{
-    height: 100%;
-    list-style-type: none;
-    padding-left:20px ;
-}
-ul li.item-menu{
-    transition: .4s;
-    margin-right: 35px;
-}
-/*borda verde ao aproximar*/
-ul li.item-menu:hover{
-    background: #7ABA60;
-    border-radius: 10px;
-    
-}
-ul li.item-menu a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size:  20px;
-    padding: 10px 0%;
-    display: flex;
-    margin-bottom: 20px ;
-    line-height: 40px;
-    margin-top: 45px;
-}
-/*texto dos itens*/
-ul li.item-menu a .txt-link{
-    margin-left: 30px;
-}
-/*icones dos itens*/
-ul li.item-menu a .icon> i{
-    font-size: 30px;
-}
-/*BOTÃO VERDE*/
-.item-home.active{
-    background-color: #7ABA60;
-    margin-right: 35px;
-    border-radius: 25px;
-    margin-top: -25px;
-    
-}
-/*home button*/
-ul li.item-home a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size:  20px;
-    padding: 10px 0%;
-    display: flex;
-    margin-bottom: 20px ;
-    line-height: 40px;
+/* -------- SIDEBAR NOVA -------- */
+.sidebar {
+  width: 220px;
+  background: #4a1a73;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-ul li.item-home a .txt-link{
-    margin-left: 90px;
+.logo {
+  width: 230px;
+  margin-bottom: 30px;
+  filter: brightness(0) invert(1);
 }
-/*voltar pagina*/
-ul li.item-Voltar a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size:  20px;
-    display: flex;
-    margin-bottom: 20px ;
-    line-height: 110px;
-    margin-top: 180px;
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
 }
-/*texto de voltar*/
-ul li.item-Voltar a .txt-link{
-    margin-left: 05px;
+
+.menu a {
+  background: #7dc67d;
+  color: #1c1c1c;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
 }
-/*icone de voltar*/
-ul li.item-Voltar a .icon> i{
-    font-size: 20px;
-    margin-left: 70px;
+
+.menu a:hover {
+  background: #8ee18e;
 }
-/*barra superior*/
-.barra-superior {
+
+.menu a.active {
+  background: #a4e5a4;
+}
+
+.icones {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* -------- TOPO / HEADER NOVO -------- */
+.content {
+  margin-left: 220px;
+  flex: 1;
+  padding: 30px;
+  
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top-header input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-left: 20px;
+}
+
+/* -------- BARRA CENTRAL -------- */
+.uploud-barra {
     width: 100%;
-    height: 70px;
-    background-color: #3D1F62;
-    display: flex;
-    align-items: center;
-    padding-left: 320px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.menu-esquerda a .icon-up > i {
-    font-size: 30px;
-    color: white;
-    margin-left: 15px;
-}
-
-/*barra central*/
-.uploud-barra{
-    width: 1450px;
+    max-width: 1450px;
     height: 650px;
     background-color: #3D1F62;
-    margin-left: 20%;
-    margin-right: 45%;
-    margin-top: 2%;
-    padding: 20px 0 20px 0%;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     border-radius: 25px;
     align-items: center;
+    justify-content: center;
+    gap: 10px ;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-/*icone dentro do uploud*/
-.uploud-imagem a .icon-up> i{
-    font-size: 100px;
-    margin-left: 675px;
-    color: white;
-    
 
+.uploud-barra:hover {
+    transform: scale(1.04);
+    background-color: #33135a;
 }
-/*letras de seleiconar arquivo*/
+
+.uploud-imagem a .icon-up > i {
+    font-size: 100px;
+    color: white;
+    margin-left: 340px;
+}
+
+.texto-center {
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    margin: 20px 0;
+}
+
 .uploud-imagem a .txt-links {
     display: inline-block;
-    background-color: #7ABA60; 
+    background-color: #7ABA60;
     color: white;
     padding: 12px 24px;
     border-radius: 12px;
@@ -149,46 +129,35 @@ ul li.item-Voltar a .icon> i{
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
-    margin-left: 605px;
     transition: background-color 0.3s;
+    margin-left: 275px;
 }
-a .txt-links:hover {
+
+.uploud-imagem a .txt-links:hover {
     background-color: #1D0638;
 }
 
-/*arraste e solte*/
-.texto-center{
-    margin-left: 562px;
-    width: 555px;
-    height: 20px;
-    color: white;
-    opacity: 0.7;
-
-}
-/*AVISO!!*/
+/* -------- AVISO -------- */
 .aviso-container {
-    background-color: #3D1F62;
     padding: 20px;
     text-align: center;
-    margin-left: 275px;
+    margin-top: 20px;
 }
-/*AVISO!!*/
+
 .aviso-texto {
     color: white;
-    font-family: 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
-    margin-top: 15px;
-    margin-left: 60px;
 }
 
 .verde {
     color: #7ABA60;
     font-weight: 500;
 }
-/* botão de cadastro*/
-.txt-cadastro {
+
+/* -------- BOTÃO DE NOMECLATURA -------- */
+.txt-NOMECLATURA {
     display: inline-block;
     background-color: #7ABA60;
     color: white;
@@ -198,10 +167,16 @@ a .txt-links:hover {
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
-    margin-left: 400px;
-    margin-top: 60px;
+    margin: 60px auto 20px 20px;
+    display: block;
+    width: fit-content;
     transition: background-color 0.3s;
 }
+
+.txt-NOMECLATURA:hover {
+    background-color: #60994d;
+}
+
 
 
 
