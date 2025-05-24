@@ -3,53 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Cadastro de Taxas - Duby</title>
-  <link rel="stylesheet" href="/Residencia-Squad03/pages/Cadastro de Taxas/style.css">
+  <link rel="stylesheet" href="Residencia-Squad03/pages/Cadastro de Taxas/">
 </head>
 <body>
-  <aside class="sidebar">
-    <header> 
-      <div class="logo">
-        <a href="#">
-          <img src="/Residencia-Squad03/Assets/logo.png" alt="logo">
-        </a>
-      </div>
-    </header> 
-
-    <button class="btn-home">Home</button>
-
+<aside class="sidebar">
+    <img src="/Residencia-Squad03/Assets/logo.png" alt="Logo da Empresa" class="logo">
     <nav class="menu">
-      <p>Relatório Financeiro</p>
-      <p>Transações</p>
-      <p>Gestão de taxas</p>
-      <details open>
-        <summary class="cadastro">Cadastros</summary>
-        <ul>
-          <li> > Cadastro de Informações Financeiras</li>
-          <li> > Cadastro de Banco</li>
-          <li> > Cadastro de Adquirente</li>
-          <li class="active"> > Cadastro de Taxas</li>
-        </ul>
-      </details>
-    </nav>
+    <a href="#"><span><img src="/Residencia-Squad03/Assets/home.png" class="icones"></span> Home</a>
+    <a href="#"><span>📊</span> Relatório Financeiro</a>
+    <a href="#"><span>💳</span> Transações</a>
+    <a href="#" class="active"><span>⚙️</span> Gestão de Taxas</a>
+    <a href="#"><span>📝</span> Cadastros</a>
+    <a href="#"><span><i class="bi bi-upload"></i></span> Envio de documentos </a>
+    <a href="#" class="voltar-btn"><span><img src="/Residencia-Squad03/Assets/voltar.png" class="icones"></span>Voltar</a>
+</nav>
+</aside>
 
-    <a class="voltar" href="#"> <img class="voltar_img" src="/Residencia-Squad03/Assets/voltar.png" alt="voltar"> Voltar</a>
-    
-  </aside>
-
+<div class="content-wrapper">
   <div class="main-area">
     <header class="header">
       <button class="home-header"> <img class="home" src="/Residencia-Squad03/Assets/home.png"> </button>
       <input type="text" class="search-bar" placeholder="Pesquisar">
       <div class="header-icons">
-        <span ><img class="calendario" src="/Residencia-Squad03/Assets/calendario.png" alt="calendario"> Calendário</span>
-        <span><img class="chat" src="/Residencia-Squad03/Assets/chat.png" alt="chat"> </span>
-        <span><img class="perfil" src="/Residencia-Squad03/Assets/perfil.png" alt="perfil"> </span>
+        <span ><img class="calendario" src="/Residencia-Squad03/Assets/calendario.png" alt="Calendário"> Calendário</span>
+        <span><img class="chat" src="/Residencia-Squad03/Assets/chat.png" alt="Chat"> </span>
+        <span><img class="perfil" src="/Residencia-Squad03/Assets/perfil.png" alt="Perfil"> </span>
       </div>
     </header>
   <h1 class="titulo-principal">Cadastro de Taxas</h1>
     <main class="main-content">
-      <div class="middle-box">
       
+      <div class="middle-box">
         <div class="form-container">
           <h2 class="titulo-formulario">Cadastro de Taxas</h2> 
     
@@ -100,8 +84,9 @@
         </div>
       </div>
     </main>
-    
+  </div>
+</div>
 
-  <script src="/Residencia-Squad03/script/scriptCadastro.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
