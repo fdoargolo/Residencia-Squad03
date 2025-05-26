@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b0033;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+  
+  .sidebar {
+    width: 16vw; 
+    background-color: #4b0082;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5vw;
+    /* padding-top: 20px; */
+  }
+  
+  .logo {
+    display: flex;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    top: 0;
+    text-align: left; /* centraliza a imagem */
+    margin-bottom: 5vh;
+    /* padding: 50px 0px; espaço acima e abaixo */
+  }
+  
+  .logo img {
+    max-height: 10vh; /* a imagem ocupa até 100% da largura da sidebar */
+    height: auto; /* mantém a proporção */
+    size: 10vh;
+  }
+  
+  
+  .btn {
+    width: 100%;
+    background-color: #7CFC00;
+    border: none;
+    padding: 2vh 2vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .menu a.active {
+    background-color: #7CFC00;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .submenu {
+    margin-left: 10px;
+  }
+  
+  .voltar {
+    margin-top: auto;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topbar {
+    background-color: #2e0066;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topbar input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .icons img {
+    margin-left: 20px;
+    cursor: pointer;
+    width: 40px;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #3d0075;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody tr:hover {
+    background-color: #5d0099;
+  }
