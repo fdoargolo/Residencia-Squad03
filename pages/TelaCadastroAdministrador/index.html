@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestão de Clientes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="/Residencia-Squad03/Assets/logo.png" alt="Logo" style="height: 40px;">
+    <span>Gestão de Clientes</span>
+  </header>
+
+  <div class="container">
+    <div class="form-section">
+      <h2>Adicionar Usuário</h2>
+      <div class="input-pair">
+        <input type="text" id="nome" placeholder="Nome" />
+        <input type="text" id="cpfcnpj" placeholder="CPF/CNPJ" />
+      </div>
+      <div class="input-pair">
+        <input type="text" id="razao" placeholder="Razão Social" />
+        <input type="text" id="ramo" placeholder="Ramo" />
+      </div>
+      <div class="input-pair">
+        <input type="text" id="numero" placeholder="Telefone" />
+        <input type="text" id="email" placeholder="E-mail" />
+      </div>
+      <button onclick="adicionarUsuario()">Adicionar</button>
+    </div>
+
+    <div class="list-section">
+      <div class="search-bar center">
+        <input type="text" id="filtroNome" placeholder="Filtrar por Nome" oninput="filtrarTabela()" />
+        <input type="text" id="filtroCnpj" placeholder="Filtrar por CNPJ" oninput="filtrarTabela()" />
+        <input type="text" id="filtroEmail" placeholder="Filtrar por E-mail" oninput="filtrarTabela()" />
+      </div>
+      <div class="table-header">
+        <span>Nome</span>
+        <span>CNPJ</span>
+        <span>Razão Social</span>
+        <span>Ramo</span>
+        <span>Telefone</span>
+        <span>E-mail</span>
+        <span>Acesso</span>
+      </div>
+      <div id="tabelaUsuarios" class="user-table"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
