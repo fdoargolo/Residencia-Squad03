@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #2d214d;
+  background-color: #2d1248;
   color: #fff;
 }
 
@@ -18,21 +18,21 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #442c6e;
+  background-color: #442c6e; /* ou o verde, conforme quiser */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* separa topo e base */
   height: 100vh;
+  padding: 20px;
 }
+
+
 .sidebar a {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .sidebar a img {
@@ -41,7 +41,9 @@ body {
 }
 
 .sidebar .logo img {
-  width: 270px;
+  width: 250px;
+  margin-bottom: 10px;
+  width: 110%;
 }
 
 .sidebar nav ul {
@@ -49,22 +51,22 @@ body {
 }
 
 .sidebar nav ul li a {
-  display: block;
-  padding: 10px;
-  color: #b8f2c4;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  padding: 10px;
+  color: #1c1c1c; /* cor do texto, mais escura para contraste */
+  background-color: #7dc67d; /* fundo verde */
   border-radius: 5px;
-  transition: background-color 0.1s;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 600;
 }
 
-.sidebar nav ul li a:hover {
-  background-color: #c3fbd8;
-  color: #000;
-}
 
 .sidebar nav ul li a.active {
   background-color: #7dc67d;
-  color: #000;
+  color: black;
 }
 
 .submenu {
@@ -83,7 +85,7 @@ body {
 
 /* Voltar */
 .voltar {
-  margin-top: 20px;
+  margin-top: auto;
 }
 
 .voltar a {
@@ -95,9 +97,9 @@ body {
 }
 
 .voltar button {
-  width: 70%;
+  width: 100%;
   background-color: #7dc67d;
-  color: white;
+  color: black;
   border: none;
   padding: 12px 15px;
   border-radius: 5px;
@@ -106,6 +108,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
   gap: 10px;
   transition: background-color 0.3s ease;
 }
@@ -172,18 +175,21 @@ h1 {
 }
 
 .form-container {
-  background-color:  #404040;
+  background-color:#330160;
   padding: 30px;
   border-radius: 10px;
 }
 
 .form-group {
   margin-bottom: 15px;
+  color: #4a1a73;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 5px;
+  color: #fff;
+  font-weight: 600;
 }
 
 .form-group input,
@@ -191,7 +197,8 @@ h1 {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #2d1248;
+  color: #2d1248;
 }
 
 .form-buttons {
