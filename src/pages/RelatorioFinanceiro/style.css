@@ -1,0 +1,34 @@
+.rel-wrapper { padding: 12px 64px 32px; }
+
+h1, h2 { margin-bottom: 20px; color: #fff; }
+
+/* ─── Blocos de métricas-chave ─────────────────────────── */
+.metricas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.metricas div {
+  background: #2a114d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background .3s, transform .2s;
+}
+.metricas div:hover {
+  background: #37195e;
+  transform: translateY(-2px);
+}
+.metricas strong { display:block; margin-bottom:8px; font-weight:600; }
+.metricas p      { font-size:1.2em; font-weight:700; color:#dcdcff; }
+
+/* ─── Tabela grande ───────────────────────────────────── */
+.todas-metricas table  { width:100%; border-collapse:separate; border-spacing:0 8px; font-size:.95em; color:#fff; }
+.todas-metricas th     { text-align:left; padding:12px 16px; background:#2a114d; font-weight:600; border-radius:6px 6px 0 0; }
+.todas-metricas td     { background:#1e0038; padding:14px 16px; border-radius:6px; transition:background .3s;}
+.todas-metricas tr:hover td { background:#37195e; }
+
+.percentual { font-weight:bold; }
+.positivo::before { content:"▲ "; color:#4fe07e; }
+.negativo::before { content:"▼ "; color:#ff6767; }

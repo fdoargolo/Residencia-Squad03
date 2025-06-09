@@ -1,0 +1,55 @@
+.tax-wrapper { padding: 12px 64px 32px; }  /* 56 px (header) + 16 px de respiro */
+
+h1 { margin-bottom: 24px; }
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.kpi-card {
+  background: #2a114d;
+  border-radius: 12px;
+  padding: 20px;
+}
+.kpi-card h3 { font-size: 16px; color:#9f9f9f; margin:0 0 8px; }
+.kpi-card p  { font-size: 26px; font-weight:700; margin:0; }
+
+/* ── Grelha inferior (3 colunas) ────────────────────────── */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  gap: 24px;
+}
+
+.card {
+  background:#2a114d;
+  border-radius:12px;
+  padding:24px;
+}
+.card h3 { margin:0 0 12px; }
+
+/* Tabela */
+table { width:100%; border-collapse:collapse; font-size:.95em; }
+th,td { padding:8px; text-align:left; }
+tbody tr:not(:last-child) td { border-bottom:1px solid rgba(255,255,255,.15);}
+tbody tr:hover td { background:#37195e; }
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "table bar"
+    "table pie";    /* tabela na esquerda ocupa duas linhas */
+  gap: 24px;
+}
+
+.table-card { grid-area: table; }
+.bar-card   { grid-area: bar; }
+.pie-card   { grid-area: pie; }
+/* força vermelho em qualquer <td> com classe divergencia */
+td.divergencia {
+  color: #d62828 !important;
+}

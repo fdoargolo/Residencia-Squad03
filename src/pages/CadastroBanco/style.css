@@ -1,0 +1,122 @@
+.cad-wrapper {
+  padding: 12px 64px 32px;  /* espaço para o header fixo + margem */
+}
+
+.form-card {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #2a114d;
+  border-radius: 12px;
+  padding: 32px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+  gap: 6px;
+}
+
+.duplo-campo {
+  display: flex;
+  gap: 12px;
+}
+
+.duplo-campo label {
+  flex: 1;
+}
+
+input,
+select {
+  height: 38px;
+  background: #180433;
+  border: 1px solid #3b2172;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0 12px;
+}
+
+input::placeholder {
+  color: #b5a3e0;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+button {
+  flex: 1;
+  height: 42px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.salvar {
+  background: #4fe07e;
+  color: #140028;
+}
+.salvar:hover { background: #38b867; }
+
+.limpar {
+  background: #f0b429;
+}
+.limpar:hover { background: #d39a1d; }
+
+.cancelar {
+  background: #d62828;
+}
+.cancelar:hover { background: #b91d1d; }
+
+/* responsivo */
+@media (max-width: 500px) {
+  .form-card {
+    width: 100%;
+    padding: 24px;
+  }
+  .duplo-campo {
+    flex-direction: column;
+  }
+}
+/* --- IMPORTAR ARQUIVO --- */
+.import-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.import-file input[type="file"] {
+  display: none;
+}
+
+.btn-import {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #4fe07e;
+  color: #140028;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+  user-select: none;
+}
+.btn-import:hover {
+  background: #38b867;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-style: italic;
+}

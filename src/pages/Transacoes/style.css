@@ -1,0 +1,35 @@
+.trx-wrapper { padding: 12px 64px 32px; }
+
+h1 { margin-bottom: 24px; }
+
+.busca {
+  width: 260px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #2a114d;          /* mesmo roxo escuro */
+  border-radius: 12px;
+  padding: 24px;
+}
+
+table { width:100%; border-collapse:collapse; }
+th, td { text-align:center; padding:14px 8px; }
+th { color:#b5a3e0; font-weight:600; font-size:.9rem; }
+
+tbody tr:not(:last-child) td { border-bottom:1px solid rgba(255,255,255,.15); }
+tbody tr:hover td            { background:#37195e; }
+
+.vazio { text-align:center; padding:32px 0; color:#b5a3e0; }
+/* 1 ─ espaço interno igual às outras telas */
+
+/* 2 ─ alinhar texto da tabela à esquerda */
+.tx-table th,
+.tx-table td { text-align: left; }
+
+/* opcional: levemente menos padding na 1ª coluna se quiser */
+.tx-table th:first-child,
+.tx-table td:first-child { padding-left: 12px; }

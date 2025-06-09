@@ -1,0 +1,37 @@
+/* TopBar.css */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  height: 56px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 150;
+}
+
+.hamburger {
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  flex: 0 0 auto;    /* mantém só o tamanho do ícone */
+}
+
+.top-bar-logo {
+  height: 32px;
+  margin-left: 12px;
+  object-fit: contain;
+  flex: 0 0 auto;    /* mantém só o tamanho da imagem */
+}
+
+/* ESTA REGRA GARANTE QUE O INPUT VÁ PARA A DIREITA: */
+.top-bar input {
+  flex: 0 0 280px;   /* largura fixa de 280px */
+  margin-left: auto; /* empurra o input para o canto direito */
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+}

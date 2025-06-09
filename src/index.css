@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #1c0030;
+  color: #ffffff;
+}
+:root {
+  --sidebar-width: 240px;
+}
+.layout {
+  display: flex;
+}
+.main-area {
+  margin-left: 0;
+  flex: 1;
+}/* ───── Cabeçalho consistente em todo o app ───── */
+:root{
+  --header-h: 72px;           /* altura total que você quiser (72px do print) */
+}
+
+.top-bar{
+  height: var(--header-h);
+  padding: 0 24px;            /* laterais apenas – sem mudar a altura */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(4px);
+  position:fixed;
+  top:0; left:0; right:0;
+  z-index:150;
+}
+
+.top-bar .hamburger,
+.top-bar .menu-btn{ margin:0; }
+
+body{ padding-top: var(--header-h); }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Inter/Inter-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/Inter/Inter-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Inter/Inter-SemiBold.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Inter/Inter-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* aí você define como padrão pro seu body/sidebar/header… */
+:root {
+  --font-body: 'Inter', sans-serif;
+}
+body {
+  font-family: var(--font-body);
+}
+

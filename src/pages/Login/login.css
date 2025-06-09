@@ -1,0 +1,88 @@
+.login-container {
+  position: fixed;
+  inset: 0;
+  background: url('../../assets/DubyBG.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7) 0%,
+    rgba(0,0,0,0.3) 50%,
+    rgba(0,0,0,0.7) 100%
+  );
+  z-index: 1;
+}
+
+.login-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(24, 12, 54, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 48px;
+  border-radius: 12px;
+  width: 360px;
+  max-width: 90%;
+}
+
+.login-logo {
+  width: 140px;
+  margin-bottom: 32px;
+}
+
+.login-form h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  color: #fff;
+  font-size: 14px;
+}
+
+.login-form input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.login-form input:focus {
+  outline: none;
+  border-bottom-color: #7c3aed;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #7c3aed;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.login-footer {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.login-footer a {
+  color: #7c3aed;
+  text-decoration: none;
+}

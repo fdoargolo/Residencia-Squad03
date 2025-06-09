@@ -1,0 +1,29 @@
+.home-wrapper { padding: 24px 64px 32px; }
+.page-title   { margin: 0 0 24px; }
+
+/* === GRELHA PRINCIPAL ===================================== */
+.row-2 { display: grid; grid-template-columns: repeat(auto-fit,minmax(380px,1fr)); gap: 24px; }
+
+.card {
+  background: #2a114d;
+  border-radius: 12px;
+  padding: 24px;
+}
+.card h3 { margin: 0 0 12px; }
+
+/* === KPI block ============================================ */
+.kpi-block { display: flex; flex-direction: column; }
+.kpi-grid  { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 16px; margin-top: 12px; }
+.kpi       { background:#1e0038; border-radius:8px; padding:16px; text-align:center; }
+.kpi span  { display:block; font-size:.85rem; color:#b5a3e0; margin-bottom:4px; }
+.kpi strong{ font-size:1.1rem; }
+
+/* === Tabela =============================================== */
+.tx-table { width:100%; border-collapse:collapse; margin-top:12px; }
+.tx-table th, .tx-table td { padding:6px 8px; text-align:left; }
+.tx-table tbody tr:not(:last-child){ border-bottom:1px solid rgba(255,255,255,.12); }
+.tx-table th { color:#b5a3e0; font-weight:500; font-size:.85rem; }
+/* espaço extra entre a 1ª e a 2ª linha de cards  */
+.row-2 + .row-2 {
+  margin-top: 24px;     /* pode ajustar (ex.: 32px) se quiser mais respiro */
+}

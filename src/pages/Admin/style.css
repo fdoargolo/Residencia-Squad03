@@ -1,0 +1,113 @@
+.cad-wrapper {
+  padding: 12px 64px 32px; /* deixa espaço para o header fixo */
+  color: #fff;
+}
+
+.admin-container {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center
+}
+
+/* formulário à esquerda */
+.admin-add-form {
+  background: #2a114d;
+  border-radius: 12px;
+  padding: 24px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.admin-add-form h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.admin-add-form input {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #3b2172;
+  border-radius: 6px;
+  background: #180433;
+  color: #fff;
+}
+.admin-add-form button {
+  height: 40px;
+  background: #4fe07e;
+  color: #140028;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.admin-add-form button:hover {
+  background: #38b867;
+}
+
+/* tabela de colunas */
+.admin-table {
+  display: flex;
+  gap: 16px;
+}
+.col {
+  background: #2a114d;
+  border-radius: 8px;
+  padding: 16px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.col-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col-filter {
+  margin-bottom: 8px;
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid #3b2172;
+  border-radius: 6px;
+  background: #180433;
+  color: #fff;
+}
+.col-item {
+  display: flex;
+  align-items: center;   /* <— centra texto e toggle verticalmente */
+  padding: 6px 0;
+  border-bottom: 1px solid #3b2172;
+  font-size: 0.9rem;
+}
+/* toggle simples */
+.toggle {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 18px;
+  background: #555;
+  border-radius: 9px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.toggle.on {
+  background: #4fe07e;
+}
+.toggle.on::after {
+  left: calc(100% - 16px);
+}
