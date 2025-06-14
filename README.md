@@ -77,9 +77,6 @@ package.json               # Dependências e scripts
 # Clone este repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
-# Acesse a pasta do projeto
-cd nome-do-projeto
-
 # Instale as dependências
 npm install
 
