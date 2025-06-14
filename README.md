@@ -75,7 +75,7 @@ package.json               # Dependências e scripts
 ```
 
 # Clone este repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/fdoargolo/Residencia-Squad03.git
 
 # Instale as dependências
 npm install
