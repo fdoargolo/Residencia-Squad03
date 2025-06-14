@@ -75,20 +75,19 @@ package.json               # Dependências e scripts
 
 ## ▶️ Passo a Passo para Executar o Projeto
 
-  ## Clone este repositório:
-
+```bash
+# Clone este repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
-   ## Instale as dependências:
+# Acesse a pasta do projeto (se necessário)
+cd nome-do-projeto
 
+# Instale as dependências
 npm install
 
-   ## Execute o servidor de desenvolvimento:
-
+# Execute o servidor de desenvolvimento
 npm run dev
 
-   ## Acesse no navegador:
-
+# Acesse no navegador
 http://localhost:5173
 
-##Pronto!
