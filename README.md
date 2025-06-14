@@ -72,6 +72,7 @@ index.html                 # HTML principal
 vite.config.js             # Configuração do Vite
 package.json               # Dependências e scripts
 
+```
 
 # Clone este repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
